@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -o bin /etc/passwd | wc -l
+grep -o bin /etc/passwd | wc -l | sed "s/ //g;"
