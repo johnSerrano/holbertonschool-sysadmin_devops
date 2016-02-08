@@ -1,0 +1,3 @@
+1. You need to create an RSA key pair using ssh-keygen. 
+2. The public key should be given to any servers which the holder of the private key should be able to access. It can decrypt anything encrypted with the public key, so it can be used to verify the identity of the connecting user.
+3. The private key should be kept private, and should be password protected. This key is used by the local machine to encrypt a message which can only be decoded by the public key, proving that the local macine has the private key. Assuming the private key is kept safe, this proves the identity of the connecting key.
