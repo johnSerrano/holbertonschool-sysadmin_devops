@@ -1,0 +1,2 @@
+#!/bin/bash
+cut -f 1 -d ':' /etc/passwd | tr [a-mn-zA-MN-Z]  [n-za-mN-ZA-M] | sort | tr [a-mn-zA-MN-Z]  [n-za-mN-ZA-M]

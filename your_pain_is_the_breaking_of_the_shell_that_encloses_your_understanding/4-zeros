@@ -1,0 +1,2 @@
+#!/bin/bash
+cut -f 3 -d ':' /etc/passwd | grep 0 | wc -l 
