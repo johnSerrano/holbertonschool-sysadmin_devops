@@ -1,0 +1,14 @@
+from fabric.api import *
+
+env.hosts = [
+	'johnserrano.tech',
+]
+env.user = "admin"
+
+#not going to bother packing it since there isn't much to this site
+def ship():
+	put("site/index.html", "/usr/share/nginx/html/index.html")
+	put("site/style.min.css", "/usr/share/nginx/html/style.min.css")
+
+def hostname():
+	run("hostname")
