@@ -1,0 +1,29 @@
+from fabric.api import *
+
+env.hosts = [
+	'johnserrano.tech',
+]
+env.user = "admin"
+
+def maintenance_on():
+	sudo("rm /etc/nginx/sites-enabled/default")
+	sudo("ln -s /etc/nginx/sites-available/maintain /etc/nginx/sites-enabled/default")
+	sudo("service nginx reload")
+
+
+
+def maintenance_off():
+	sudo("rm /etc/nginx/sites-enabled/default")
+	sudo("ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default")
+	sudo("service nginx reload")
+
+
+#not going to bother packing it since there isn't much to this site
+def ship():
+	put("site/index.html", "/usr/share/nginx/html/index.html")
+	put("site/style.min.css", "/usr/share/nginx/html/style.min.css")
+	put("site/maint.html", "/usr/share/nginx/maintain/maint.html")
+
+
+def hostname():
+	run("hostname")
