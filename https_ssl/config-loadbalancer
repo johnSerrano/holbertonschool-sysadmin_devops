@@ -1,0 +1,27 @@
+upstream backend  {
+  server webone.johnserrano.tech:443 weight=1;
+  server webtwo.johnserrano.tech:443 weight=9;
+}
+
+server {
+        listen 443 ssl;
+
+        server_name johnserrano.tech www.johnserrano.tech;
+
+        ssl_certificate /etc/letsencrypt/live/johnserrano.tech/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/johnserrano.tech/privkey.pem;
+
+        ssl_dhparam /etc/ssl/certs/dhparam.pem;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+
+  location / {
+    proxy_pass  https://backend;
+  }
+
+}
+
+server {
+    listen 80;
+    server_name webone.johnserrano.tech;
+    return 301 https://$host$request_uri;
+}

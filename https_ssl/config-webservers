@@ -1,0 +1,36 @@
+server {
+        listen 443 ssl;
+
+        server_name _;
+
+        ssl_certificate /etc/letsencrypt/live/webtwo.johnserrano.tech/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/webtwo.johnserrano.tech/privkey.pem;
+
+        ssl_dhparam /etc/ssl/certs/dhparam.pem;
+
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+
+    root /usr/share/nginx/html;
+    index index.php index.html index.htm;
+
+    location = / {
+        try_files $uri $uri/ =404;
+    }
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+       fastcgi_split_path_info ^(.+\.php)(/.+)$;
+       fastcgi_pass unix:/var/run/php5-fpm.sock;
+       fastcgi_index index.php;
+       include fastcgi_params;
+   }
+}
+
+server {
+    listen 80;
+    server_name webone.johnserrano.tech;
+    return 301 https://$host$request_uri;
+}
