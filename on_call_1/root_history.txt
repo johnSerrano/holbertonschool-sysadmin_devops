@@ -1,0 +1,196 @@
+    1  cd /var/lib/mysql
+    2  sl
+    3  ls
+    4  ls -l
+    5  chmod +r *
+    6  ls -l
+    7  nginx
+    8  clea
+    9  rcd ..
+   10  ls
+   11  cd ..
+   12  ls
+   13  cd newmysql/
+   14  ls
+   15  ls -l
+   16  chmod +r *
+   17  ls
+   18  ls -l
+   19  cd /etc/mysql/
+   20  ls
+   21  vim my.cnf
+   22  sudo service mysql restart
+   23  sudo mysql
+   24  sudo service mysql status
+   25  cd /var/log
+   26  ls
+   27  cd mysql
+   28  ls
+   29  cat error.log 
+   30  ps -ef | grep mysql
+   31  service mysql start
+   32  cat error.log 
+   33  service mysql start
+   34  cat error.log 
+   35  cd /var/lib/
+   36  ls
+   37  cd mysql/
+   38  ls
+   39  ls -l
+   40  mysql_upgrade
+   41  ls
+   42  cat mysql_upgrade_info 
+   43  clear
+   44  ls
+   45  ls -ltr
+   46  cd /etc/mysql
+   47  ls
+   48  cd conf.d/
+   49  ls
+   50  cd ..
+   51  ls
+   52  cat my.cnf
+   53  clear
+   54  ls
+   55  cd -
+   56  ls
+   57  cd /var/lib/mysql
+   58  ls
+   59  clear
+   60  ls
+   61  ls -l
+   62  mysql
+   63  cat /usr/share/nginx/html/index.php 
+   64  ls
+   65  cd -
+   66  cd //
+   67  ls
+   68  cd -
+   69  sl
+   70  ls
+   71  cd ..
+   72  ls
+   73  cat my.cnf
+   74  cd /
+   75  l
+   76  cd /var/lib/
+   77  ls
+   78  cd newmysql/
+   79  ls
+   80  clear
+   81  ls
+   82  ls -l
+   83  ls -l ../mysql/
+   84  chown mysql:mysql *
+   85  chown mysql:mysql ../mysql/*
+   86  ls -l ../mysql/
+   87  service mysql start
+   88  cat /var/log/mysql/error.log 
+   89  mysqld
+   90  clear
+   91  ls
+   92  mysql
+   93  mysqld
+   94  cd /var/lib
+   95  ls
+   96  ls -l | grep mysql
+   97  chmod 766 mysql/
+   98  ls
+   99  mysqld
+  100  sudo mysqld
+  101  cd /var/lib/
+  102  ls
+  103  ls -l | grep mysql
+  104  chmod 677 mysql/
+  105  ls -l | grep mysql
+  106  chmod 766 mysql/
+  107  ls
+  108  ls -l | grep mysql
+  109  ls
+  110  chmod 755 mysql/
+  111  ls -l | grep mysql
+  112  sudo mysqld
+  113  ps -ef | grep mysql/
+  114  ls -l | grep mysql/
+  115  ls -l | grep mysql
+  116  cd /var/lib/mysql/
+  117  ls
+  118  touch file
+  119  ls
+  120  rm file
+  121  ls
+  122  ls -l
+  123  su mysql
+  124  ls
+  125  touch ip-172-31-60-28.lower-test
+  126  ls
+  127  rm ip-172-31-60-28.lower-test 
+  128  mysqld
+  129  cd /etc/mysql/
+  130  ls
+  131  vim my.cnf
+  132  w
+  133  exit
+  134  service nginx restart
+  135  use netstat -plnt | grep ':80'
+  136  sudo  netstat -plnt | grep ':80'
+  137  clear
+  138  ls
+  139  watch -n 1 "ps -ef | grep nginx"
+  140  sudo service nginx start
+  141  watch -n 1 "ps -ef | grep nginx"
+  142  ckear
+  143  clea
+  144  clear
+  145  ls
+  146  cd /
+  147  ls
+  148  cd etc/
+  149  ls
+  150  cat crontab
+  151  clear
+  152  ls
+  153  cd /
+  154  ls
+  155  cd
+  156  ls
+  157  ls -la
+  158  cat bashrc
+  159  cat .bashrc
+  160  q
+  161  sudo nginx
+  162  cd /var/log/nginx
+  163  ls
+  164  cat error.log 
+  165  clear
+  166  ls
+  167  cd /etc/apparmor.d
+  168  ls
+  169  cat force-complain/
+  170  ls
+  171  cd force-complain/
+  172  ls
+  173  cd ..
+  174  ls
+  175  cd local/
+  176  ls
+  177  cd ..
+  178  ls
+  179  cd ..
+  180  sl
+  181  ls
+  182  service apache status
+  183  service apache2 status
+  184  ps -ef 
+  185  ps -ef | grep ^root
+  186  ps -ef | grep -v root
+  187  sudo service atd stop
+  188  service nginx start
+  189  cd /etc
+  190  ls
+  191  cat crontab
+  192  crontab -e
+  193  service nginx restart
+  194  cd
+  195  ls
+  196  history > history.txt

@@ -1,0 +1,414 @@
+    1  rm ~/.bash_history 
+    2  sudo su
+    3  clear
+    4  ls
+    5  ls -l
+    6  cat \#y\#
+    7  cat \#y\# && echo
+    8  ls
+    9  sudo service nginx status
+   10  sudo aervice nginx start
+   11  sudo service nginx start
+   12  sudo service nginx status
+   13  cd /var/log/nginx
+   14  ls
+   15  cat access.log 
+   16  ping 8.8.8.8
+   17  clear
+   18  ls
+   19  iptables -S
+   20  sudo iptables -S
+   21  iptables sudo iptables -P INPUT ACCEPT
+   22  sudo iptables -P FORWARD ACCEPT
+   23  sudo iptables -P OUTPUT ACCEPT
+   24  sudo iptables -t nat -F
+   25  sudo iptables -t mangle -F
+   26  sudo iptables -F
+   27  sudo iptables -X
+   28  ls
+   29  iptables -S
+   30  sudo iptables -S
+   31  clear
+   32  ls
+   33  sudo apt-get install nginx
+   34  clear
+   35  sudo service apache stop
+   36  sudo service apache2 stop
+   37  ls
+   38  ps -ef | grep apache2
+   39  sudo killall /usr/sbin/apache2 -9
+   40  ps -ef | grep apache2
+   41  clear
+   42  ls
+   43  sudo service nginx start
+   44  sudo service nginx status
+   45  cd /
+   46  ls
+   47  cd bin
+   48  ls
+   49  cd /
+   50  ls
+   51  cd /etc/nginx
+   52  ls
+   53  cat nginx.conf 
+   54  clear
+   55  ls
+   56  cd /etc/init.d
+   57  ls
+   58  cat nginx 
+   59  q
+   60  clear
+   61  ls
+   62  service nginx start
+   63  sudo nginx start
+   64  sudo nginx 
+   65  cd /
+   66  ls
+   67  cd /etc/nginx
+   68  ls
+   69  cd sites-available/
+   70  ls
+   71  cat default
+   72  sudo vim default
+   73  sudo nginx
+   74  sudo vim default
+   75  sudo nginx
+   76  sudo vim default
+   77  service nginx status
+   78  service php5-fpm status
+   79  cd /etc/php5/fpm/
+   80  ls
+   81  cat php-fpm.conf 
+   82  sudo vim php.ini
+   83  sed -i.bak 's/listen = 127.0.0.1:9000/listen = \/var\/run\/php5-fpm.sock/g' /etc/php5/fpm/pool.d/www.conf
+   84  sudo sed -i.bak 's/listen = 127.0.0.1:9000/listen = \/var\/run\/php5-fpm.sock/g' /etc/php5/fpm/pool.d/www.conf
+   85  sudo sed -i.bak 's/cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php5/fpm/php.ini
+   86  clear
+   87  ls
+   88  cd /etc/nginx
+   89  l
+   90  cd sites-available/
+   91  ls
+   92  ls -l ../sites_enabled
+   93  ls -l ../sites-enabled/
+   94  ls
+   95  cat default~
+   96  cat default
+   97  sudo service php5-fpm reload
+   98  sudo service php5-fpm status
+   99  sudo service php5-fpm start
+  100  sudo service php5-fpm status
+  101  cdev
+  102  ls
+  103  cd /
+  104  cd usr/share
+  105  ls
+  106  cd nginx
+  107  ls
+  108  cd html
+  109  ls
+  110  cat index.php
+  111  vim index.php
+  112  sudo vim index.php
+  113  clear
+  114  ls
+  115  sudo nginx
+  116  ls
+  117  cd /
+  118  ls
+  119  ps -ef | grep nginx
+  120  ps -ef | grep php
+  121  sudo service php5-fpm status
+  122  cd /etc/php5/
+  123  ls
+  124  cd fpm
+  125  ls
+  126  history
+  127  cat /etc/nginx/sites-available/default
+  128  wq
+  129  clear
+  130  ls
+  131  cd pool.d/
+  132  ls
+  133  vim www.conf
+  134  cd /var/log
+  135  ls
+  136  cat php5-fpm.log
+  137  sudo cat php5-fpm.log
+  138  clear
+  139  php5-fpm 
+  140  ls
+  141  sudo php5-fpm 
+  142  ps -ef | grep nginx
+  143  sudo nginx
+  144  ps -ef | grep nginx1
+  145  ps -ef | grep nginx
+  146  ls
+  147  cd nginx
+  148  ls
+  149  cat error.log 
+  150  sudo vim /usr/share/nginx/html/index.php
+  151  ps -ef | grep nginx
+  152  cat error.log 
+  153  sudo nginx
+  154  ls
+  155  cd ..
+  156  ls
+  157  cd /etc/nginx/
+  158  ls
+  159  cd /usr/share/nginx/html/
+  160  ls
+  161  sudo vim index.
+  162  sudo vim index.php
+  163  service nginx status
+  164  ps -ef | grep nginx
+  165  sudo nginx
+  166  cd /etc/cron.d
+  167  ls
+  168  cat php5 
+  169  clear
+  170  ls
+  171  service nginx status
+  172  sudo nginx status
+  173  sudo nginx help
+  174  sudo nginx -h
+  175  ls
+  176  cd ..
+  177  ls
+  178  cat crontab
+  179  clear
+  180  ls
+  181  cd nginx
+  182  ls
+  183  cat sites-available/
+  184  ls
+  185  cd sites-
+  186  cd sites-available/
+  187  ls
+  188  cat default
+  189  mysql
+  190  mysql -l
+  191  mysql 
+  192  clear
+  193  ls
+  194  cat default
+  195  ls
+  196  service mysql status
+  197  service mysql start
+  198  sudo service mysql start
+  199  cd /var/log
+  200  ls
+  201  cat mysql.eyy
+  202  cat mysql.err
+  203  cat mysql.log 
+  204  cd mysql/
+  205  ls
+  206  cat error.log 
+  207  cd /etc/mysql
+  208  ls
+  209  cd conf.d/
+  210  ls
+  211  cd ..
+  212  ls
+  213  cd /
+  214  ls
+  215  cd lib
+  216  ls
+  217  cd 
+  218  sudo find / | grep ibdata1
+  219  cd /var/lib/mysql/
+  220  ls
+  221  sudo cd /var/lib/mysql/
+  222  ls
+  223  sudo su
+  224  w
+  225  mysqld && w
+  226  su mysql
+  227  sudo su mysql
+  228  mysqld
+  229  mysqld -h
+  230  mysqld -help
+  231  clear
+  232  ls
+  233  nginx
+  234  sudo nginx
+  235  clear
+  236  ls
+  237  sl
+  238  cat \#y\#
+  239  clear
+  240  sl
+  241  ls
+  242  cd -
+  243  ls
+  244  sudo apparmor_status
+  245  cd /etc/apparmor.d/
+  246  ls
+  247  vim usr.sbin.mysqld
+  248  sudo vim usr.sbin.mysqld
+  249  sudo aervicce apparmor restart
+  250  sudo service apparmor restart
+  251  sudo service mysqld
+  252  sudo service mysql
+  253  sudo service mysql start
+  254  service mysql status
+  255  sudo nginx
+  256  netstat -plnt | grep ':80'
+  257  sudo netstat -plnt | grep ':80'
+  258  service haproxy status
+  259  service haproxy start
+  260  service haproxy stop
+  261  sudo service haproxy stop
+  262  sudo nginx
+  263  sudo service haproxy status
+  264  sudo netstat -plnt | grep ':80'
+  265  cd /var/log
+  266  ls
+  267  cd nginx/
+  268  ls
+  269  cat error.log 
+  270  cat error.log | grep ^php
+  271  sudo nginx
+  272  clear
+  273  ls
+  274  cd /service
+  275  cd /etc/init.d
+  276  ls
+  277  service status
+  278  nmap localhost
+  279  netstat -plnt | grep ':80'
+  280  sudo netstat -plnt | grep ':80'
+  281  clear
+  282  sudo service --status-all
+  283  sudo ervice nginx start
+  284  sudo service nginx start
+  285  sudo service nginx status
+  286  man atd
+  287  sudo service nginx start
+  288  ls
+  289  sudo ls
+  290  sudo service nginx start
+  291  ls
+  292  sudo ls
+  293  sudo ;s
+  294  sudo ls
+  295  clea
+  296  rl
+  297  sclear
+  298  ckear
+  299  clear
+  300  ls
+  301  service nginx status
+  302  service nginx start
+  303  service nginx status
+  304  sudo service nginx start
+  305  service nginx status
+  306  cd /var/log
+  307  ls
+  308  cd nginx
+  309  ls
+  310  cat error.log 
+  311  clear
+  312  ls
+  313  cat access.log 
+  314  sudo nginx
+  315  watch tail access.log 
+  316  cat access.log 
+  317  sudo service nginx start
+  318  cat access.log 
+  319  cd
+  320  ls
+  321  cd /etc/nginx
+  322  ls
+  323  vim nginx.conf 
+  324  sudo vim nginx.conf 
+  325  service nginx status
+  326  sudo service nginx start
+  327  cd /var/log/nginx
+  328  ls
+  329  cat error.log 
+  330  watch tail error.log 
+  331  cat error.log 
+  332  nginx --version
+  333  clear
+  334  ls
+  335  cd ..
+  336  ls
+  337  ps -ef | grep nginx
+  338  htop
+  339  top
+  340  clear
+  341  ls
+  342  cd /etc/init.d
+  343  ls
+  344  cd /etc/nginx
+  345  ls
+  346  cd /etc/init.d
+  347  vim nginx
+  348  service nginx status
+  349  clear
+  350  ls
+  351  cd /var/log
+  352  ls
+  353  cd nginx
+  354  ls
+  355  cat error.log 
+  356  q
+  357  clear
+  358  ls
+  359  cd /etc/nginx
+  360  vim nginx.conf
+  361  clear
+  362  ls
+  363  cd conf.d/
+  364  ls
+  365  sudo apt-get install htop
+  366  htop
+  367  sudo service nginx start
+  368  htop
+  369  sudo service nginx start
+  370  htop
+  371  ps -ef | grep status
+  372  ps -ef | grep nginx
+  373  service nginx status
+  374  service nginx start
+  375  service nginx status
+  376  sudo service nginx start
+  377  service nginx status
+  378  htop
+  379  ps -ef | grep nginx
+  380  service nginx start
+  381  sudo service nginx start
+  382  ps -ef | grep nginx
+  383  watch -n 1 ps -ef | grep nginx
+  384  watch ps -ef | grep nginx
+  385  watch "ps -ef | grep nginx"
+  386  sudo service nginx start
+  387  watch "ps -ef | grep nginx"
+  388  sudo nginx -t
+  389  cd /etc/nginx/sites-available/
+  390  ls -la
+  391  cd ../sites-enabled/
+  392  ls
+  393  ls -la
+  394  cd ..
+  395  ls
+  396  vim nginxconf
+  397  vim nginx.conf
+  398  sudo su
+  399  ls
+  400  history > history.txt
+  401  cd 
+  402  history > history.txt
+  403  cd /root
+  404  ks
+  405  ls
+  406  sudo cd /root
+  407  ls
+  408  su root
+  409  sudo su root
+  410  ls
+  411  cat history.txt 
+  412  mv history.txt root_history.txt
+  413  ls
+  414  history > history.txt
