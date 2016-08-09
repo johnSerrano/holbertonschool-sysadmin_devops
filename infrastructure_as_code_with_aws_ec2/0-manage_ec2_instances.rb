@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 require 'optparse'
 require 'yaml'
-require 'pp'
 require 'aws-sdk'
 
 def load_from_yaml
@@ -15,22 +14,25 @@ def load_from_yaml
 end
 
 def launch_ec2(config)
-  # TODO
-  puts "Launching EC2 instance (but not really)"
-  instance = ec2.instances.create({
-  :image_id           => config["image_id"],
-  :instance_type      => config["image_type"],
-  :key_name           => config["key_pair"],
-  :security_group_ids => config["security_group_ids"],
-  :count              => 1,
-
-  :block_device_mappings => [
-    {
-     :device_name => "/dev/sda1",
-     :ebs         => { :volume_size => 25, :delete_on_termination => true }
-    }
-  ]
+  ec2 = Aws::EC2::Client.new({
+  		access_key_id:     config['access_key_id'],
+  		secret_access_key: config['secret_access_key'],
+      region:            'us-west-1',
   })
+  resp = ec2.run_instances({
+      key_name:           config["key_pair"],
+      image_id:           config["image_id"],
+      instance_type:      config["instance_type"],
+      security_group_ids: config["security_group_ids"],
+      min_count:          1,
+      max_count:          1,
+      placement: {
+				  availability_zone: config["availability-zone"]
+			}
+    })
+  instance_id = resp.instances[0].instance_id
+	resp = ec2.wait_until(:instance_running, instance_ids:[instance_id])
+	puts instance_id, resp.reservations[0].instances[0].public_dns_name
 end
 
 def stop_ec2(config, instance_id)
@@ -57,7 +59,7 @@ end
 Aws.config.update ({
            access_key_id:      config["access_key_id"],
            secret_access_key:  config["secret_access_key"],
-           region:             config["availability-zone"]
+           region:             'us-west-1'
          })
 
 options = {}
